@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VetCare | Veterinaria y Agenda Online</title>
+  <meta name="description" content="Agenda consultas veterinarias, paga tu reserva y confirma por WhatsApp.">
+
+  <!-- Open Graph / redes sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="VetCare | Veterinaria y Agenda Online">
+  <meta property="og:description" content="Agenda consultas veterinarias, paga tu reserva y confirma por WhatsApp.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:locale" content="es_CL">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="VetCare | Veterinaria y Agenda Online">
+  <meta name="twitter:description" content="Agenda consultas veterinarias, paga tu reserva y confirma por WhatsApp.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=1200&q=80">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#inicio" class="brand">
+        <span class="brand-icon"><i class="bi bi-heart-pulse-fill"></i></span>
+        Vet<span>Care</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#agenda">Agendar</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a href="#agenda" class="btn btn-primary nav-cta">
+        Agendar cita
+        <i class="bi bi-calendar2-check"></i>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">Cuidado veterinario con cariño</div>
+
+          <h1>
+            Su salud también
+            <span>es parte de la familia.</span>
+          </h1>
+
+          <p>
+            Consultas, vacunas, controles, exámenes y atención preventiva
+            para perros y gatos, con agenda online y confirmación rápida.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#agenda" class="btn btn-primary">
+              Reservar una cita
+              <i class="bi bi-arrow-right"></i>
+            </a>
+
+            <a href="https://wa.me/56912345678" class="btn btn-outline" target="_blank">
+              <i class="bi bi-whatsapp"></i>
+              Hablar por WhatsApp
+            </a>
+          </div>
+
+          <div class="hero-benefits">
+            <span><i class="bi bi-check-circle-fill"></i> Agenda online</span>
+            <span><i class="bi bi-check-circle-fill"></i> Pago de reserva</span>
+            <span><i class="bi bi-check-circle-fill"></i> Recordatorio de cita</span>
+          </div>
+        </div>
+
+        <div class="hero-card reveal">
+          <div class="pet-photo"></div>
+
+          <div class="hero-card-info">
+            <span class="status"><i class="bi bi-circle-fill"></i> Atención disponible</span>
+            <h2>Tu mascota en buenas manos</h2>
+            <p>Agenda en menos de dos minutos.</p>
+
+            <a href="#agenda" class="mini-action">
+              Ver horas disponibles
+              <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="servicios">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="eyebrow">Nuestros servicios</div>
+          <h2 class="section-title">Atención para cada etapa de su vida</h2>
+          <p class="section-text">
+            Servicios veterinarios pensados para prevenir, diagnosticar y cuidar
+            la salud de tu mascota.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <i class="bi bi-stethoscope"></i>
+            <h3>Consulta general</h3>
+            <p>Evaluación clínica completa, orientación y diagnóstico inicial.</p>
+            <span>Desde $25.000</span>
+          </article>
+
+          <article class="service-card reveal">
+            <i class="bi bi-shield-plus"></i>
+            <h3>Vacunación</h3>
+            <p>Calendario preventivo para cachorros, adultos y mascotas mayores.</p>
+            <span>Desde $20.000</span>
+          </article>
+
+          <article class="service-card reveal">
+            <i class="bi bi-clipboard2-pulse"></i>
+            <h3>Control preventivo</h3>
+            <p>Chequeos periódicos, peso, alimentación y seguimiento general.</p>
+            <span>Desde $18.000</span>
+          </article>
+
+          <article class="service-card reveal">
+            <i class="bi bi-droplet-half"></i>
+            <h3>Exámenes</h3>
+            <p>Toma de muestras y evaluación de resultados clínicos.</p>
+            <span>Según evaluación</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section team" id="equipo">
+      <div class="container team-grid">
+        <div class="team-photo reveal"></div>
+
+        <div class="team-copy reveal">
+          <div class="eyebrow">Equipo profesional</div>
+          <h2 class="section-title">Medicina veterinaria con cercanía y experiencia</h2>
+          <p class="section-text">
+            Nuestro equipo acompaña a cada familia con atención clara, amable y
+            responsable. Explicamos cada paso y entregamos recomendaciones fáciles
+            de seguir en casa.
+          </p>
+
+          <div class="team-points">
+            <div>
+              <i class="bi bi-heart"></i>
+              <span>Atención con cariño</span>
+            </div>
+
+            <div>
+              <i class="bi bi-award"></i>
+              <span>Profesionales calificados</span>
+            </div>
+
+            <div>
+              <i class="bi bi-chat-dots"></i>
+              <span>Orientación clara</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section booking" id="agenda">
+      <div class="container booking-grid">
+        <div class="booking-copy reveal">
+          <div class="eyebrow">Agenda online</div>
+          <h2 class="section-title">Reserva la atención de tu mascota</h2>
+          <p class="section-text">
+            Completa los datos, elige un servicio y selecciona una fecha.
+            Después podrás pagar la reserva, confirmar por WhatsApp y agregar
+            la cita a Google Calendar.
+          </p>
+
+          <div class="booking-steps">
+            <div>
+              <span>1</span>
+              <p>Elige el servicio.</p>
+            </div>
+
+            <div>
+              <span>2</span>
+              <p>Selecciona fecha y hora.</p>
+            </div>
+
+            <div>
+              <span>3</span>
+              <p>Paga y confirma.</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="booking-form reveal" id="bookingForm">
+          <div class="form-title">
+            <div>
+              <span>Reserva veterinaria</span>
+              <h3>Datos de la cita</h3>
+            </div>
+            <i class="bi bi-calendar-heart"></i>
+          </div>
+
+          <div class="form-row">
+            <label>
+              Nombre del tutor
+              <input type="text" id="ownerName" placeholder="Tu nombre" required>
+            </label>
+
+            <label>
+              Teléfono
+              <input
+                type="tel"
+                id="ownerPhone"
+                placeholder="+56 9 1234 5678"
+                pattern="^(\+?56)?\s?9\s?\d{4}\s?\d{4}$"
+                title="Formato: +56 9 1234 5678"
+                required>
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>
+              Nombre de la mascota
+              <input type="text" id="petName" placeholder="Ej: Lia" required>
+            </label>
+
+            <label>
+              Tipo de mascota
+              <select id="petType" required>
+                <option value="">Selecciona</option>
+                <option value="Perro">Perro</option>
+                <option value="Gato">Gato</option>
+                <option value="Otra mascota">Otra mascota</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            Servicio
+            <select id="service" required>
+              <option value="">Selecciona un servicio</option>
+              <option value="Consulta general" data-price="25000">Consulta general — $25.000</option>
+              <option value="Vacunación" data-price="20000">Vacunación — $20.000</option>
+              <option value="Control preventivo" data-price="18000">Control preventivo — $18.000</option>
+              <option value="Exámenes" data-price="30000">Exámenes — desde $30.000</option>
+            </select>
+          </label>
+
+          <div class="form-row">
+            <label>
+              Fecha
+              <input type="date" id="appointmentDate" required>
+            </label>
+
+            <label>
+              Hora
+              <select id="appointmentTime" required>
+                <option value="">Selecciona una hora</option>
+                <option>09:00</option>
+                <option>10:00</option>
+                <option>11:00</option>
+                <option>12:00</option>
+                <option>15:00</option>
+                <option>16:00</option>
+                <option>17:00</option>
+                <option>18:00</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            Motivo de la consulta
+            <textarea id="reason" placeholder="Cuéntanos brevemente qué necesita tu mascota." required></textarea>
+          </label>
+
+          <div class="summary-box" id="summaryBox" hidden>
+            <div>
+              <span>Servicio seleccionado</span>
+              <strong id="summaryService">Sin seleccionar</strong>
+            </div>
+
+            <div>
+              <span>Valor estimado</span>
+              <strong id="summaryPrice">$0</strong>
+            </div>
+
+            <div>
+              <span>Abono para reservar</span>
+              <strong id="depositPrice">$0</strong>
+            </div>
+          </div>
+
+          <div class="form-error" id="formError" role="alert" aria-live="assertive" hidden></div>
+
+          <button class="btn btn-primary full-btn" type="submit">
+            Preparar reserva
+            <i class="bi bi-arrow-right"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section confirmation hidden" id="confirmationSection">
+      <div class="container">
+        <div class="confirmation-card">
+          <div class="confirmation-icon">
+            <i class="bi bi-check-lg"></i>
+          </div>
+
+          <div>
+            <span>Reserva preparada</span>
+            <h2>Completa los últimos pasos</h2>
+            <p id="confirmationText"></p>
+          </div>
+
+          <div class="confirmation-actions">
+            <a href="#" class="btn btn-payment" id="paymentButton" target="_blank">
+              <i class="bi bi-credit-card"></i>
+              Pagar abono
+              <span class="demo-badge">DEMO</span>
+            </a>
+
+            <a href="#" class="btn btn-whatsapp" id="whatsappButton" target="_blank">
+              <i class="bi bi-whatsapp"></i>
+              Confirmar por WhatsApp
+            </a>
+
+            <a href="#" class="btn btn-calendar" id="calendarButton" target="_blank">
+              <i class="bi bi-google"></i>
+              Agregar a Google Calendar
+            </a>
+          </div>
+
+          <small>
+            El botón de pago usa un enlace demostrativo. Para pagos reales hay que
+            conectarlo con Mercado Pago, Webpay o la plataforma elegida.
+          </small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contacto">
+      <div class="container contact-grid">
+        <div>
+          <div class="eyebrow">Contacto</div>
+          <h2 class="section-title">Estamos para cuidar a quienes más quieres</h2>
+          <p class="section-text">
+            Escríbenos para resolver dudas, solicitar información o consultar
+            disponibilidad.
+          </p>
+        </div>
+
+        <div class="contact-items">
+          <a href="https://wa.me/56912345678" target="_blank">
+            <i class="bi bi-whatsapp"></i>
+            <div>
+              <span>WhatsApp</span>
+              <strong>+56 9 1234 5678</strong>
+            </div>
+          </a>
+
+          <a href="mailto:contacto@vetcare.cl">
+            <i class="bi bi-envelope"></i>
+            <div>
+              <span>Correo</span>
+              <strong>contacto@vetcare.cl</strong>
+            </div>
+          </a>
+
+          <div>
+            <i class="bi bi-geo-alt"></i>
+            <div>
+              <span>Ubicación</span>
+              <strong>Santiago, Chile</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <a href="#inicio" class="brand">
+        <span class="brand-icon"><i class="bi bi-heart-pulse-fill"></i></span>
+        Vet<span>Care</span>
+      </a>
+
+      <small>© 2026 VetCare. Sitio demostrativo.</small>
+
+      <div class="socials">
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-tiktok"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
